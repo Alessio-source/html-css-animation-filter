@@ -153,4 +153,38 @@
     transform: rotateZ(0);
   }
 }
+.ex-12-button:hover > .ex-12-top-white{
+  animation-name: white-left-anim;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+.ex-12-button:hover > .ex-12-bottom-white {
+  animation-name: white-right-anim;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes white-left-anim {
+  0% {
+    left: 10%
+  }
+  50% {
+    left: 60%;
+  }
+  100% {
+    left: 10%
+  }
+}
+
+@keyframes white-right-anim {
+  0% {
+    right: 20%
+  }
+  50% {
+    right: 60%;
+  }
+  100% {
+    right: 20%
+  }
+}
 /* animazioni */
